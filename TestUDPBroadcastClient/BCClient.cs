@@ -23,7 +23,13 @@ namespace TestUDPBroadcastClient
         {
             Thread t = new Thread(new ThreadStart(RecvThread));
             t.IsBackground = true;
-            t.Start();  
+            t.Start();
+
+            string t1 = "women";
+            string t2 = "women1";
+
+            Console.WriteLine(CRC32.GetCRC32(Encoding.Default.GetBytes(t1)));
+            Console.WriteLine(CRC32.GetCRC32(Encoding.Default.GetBytes(t2)));
         }
         static void RecvThread()  
         {  

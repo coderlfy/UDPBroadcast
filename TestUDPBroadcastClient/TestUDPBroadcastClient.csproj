@@ -53,6 +53,7 @@
     <Compile Include="BCClient.Designer.cs">
       <DependentUpon>BCClient.cs</DependentUpon>
     </Compile>
+    <Compile Include="CRC32.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="BCClient.resx">
